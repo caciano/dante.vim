@@ -73,7 +73,7 @@ cp dante.lua ~/.config/nvim/colors/dante.lua
 ### Option B — lazy.nvim
 
 ```lua
-{ "caciano/dante.nvim", lazy = false, priority = 1000,
+{ "caciano/dante.vim", lazy = false, priority = 1000,
   config = function() vim.cmd.colorscheme("dante") end }
 ```
 
