@@ -1,4 +1,4 @@
-# dante.nvim
+# dante.vim
 
 A warm, dark colorscheme for Neovim — black canvas, peachpuff foreground, teal comments,
 gold keywords, green types, olive functions, red strings. Easy on the eyes for long reading
