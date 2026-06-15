@@ -63,21 +63,14 @@ it still holds up. This revival keeps that exact identity while modernizing the 
 
 ## Installation
 
-### Option A — drop-in file (no plugin manager)
-
-```bash
-mkdir -p ~/.config/nvim/colors
-cp dante.lua ~/.config/nvim/colors/dante.lua
-```
-
-### Option B — lazy.nvim
+With [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 { "caciano/dante.vim", lazy = false, priority = 1000,
   config = function() vim.cmd.colorscheme("dante") end }
 ```
 
-For a plugin repo, place the file at `colors/dante.lua` so Neovim finds it on the runtimepath.
+`lazy = false` + `priority = 1000` ensure the theme loads at startup, before other plugins.
 
 ---
 
@@ -128,4 +121,3 @@ Original `dante.vim` (2002) and the palette: **Caciano Machado**. Modernized hig
 ## License
 
 Released under the MIT License.
-
